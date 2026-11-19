@@ -51,3 +51,10 @@ On Codex 0.161.0, the `@mattpocock` marketplace install loads the promoted model
 `@mattpocock` is now the lead route on Codex, Copilot and VS Code, at the cost of a one-time opt-in on Copilot. Claude Code stays on `claude-plugins-official`, as in the 2026-08-05 update, because it auto-updates by default and needs no `marketplace add`.
 
 The version invariant above now applies to every managed route. `npm run version` already keeps it by running `scripts/sync-plugin-version.mjs`. `marketplace.json` has no `version` field, so it can't drift.
+
+## Personal fork, 2026-11-19
+
+The historical decisions above describe the upstream distribution. This fork uses
+`hung-skills@hung` from `tqhung04/skills`, including on Claude Code. It is not
+listed in `claude-plugins-official`. Current install commands live in
+[install-block.md](../install-block.md).
